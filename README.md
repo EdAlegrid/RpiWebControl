@@ -1,14 +1,10 @@
-## Node-Raspberry-RemoteControl
+## PiWebControl
 
-A simple HTTP remote control project for Raspberry Pi 3 using array-gpio, express and angular.
+A simple HTTP remote control project for Raspberry Pi using array-gpio, express and angular.
 
-Turn ON/OFF the actuators/peripherals connected to your Raspberry Pi 3 using your mobile device.
+Turn ON/OFF the actuators/peripherals connected to your Raspberry Pi using your mobile device.
 
 ![](https://github.com/EdoLabWorks/ximgs/blob/master/raspberry-remote1.png)
-
-Note:
- 
-Works on node v5.0 LTS or v6.5 latest and above.
 
 ### Raspberry Pi Pin Setup
 
@@ -29,26 +25,33 @@ gpio.setOutput(pin1, pin2 ... pin4); // max. 4 outputs
 
 ### Installation 
 
-Git clone or download the application from your Raspberry Pi computer.
+Git clone or download the application from your Raspberry Pi.
+```console
+$ git clone https://github.com/EdAlegrid/PiWebControl.git
+```
 
 In the root folder, install all dependencies.
-~~~~
+```console
+$ cd PiWebControl
 $ npm install
-~~~~
+```
 
 Run the application as shown below. 
-~~~~
+```console
 $ node app
-~~~~
+```
 
-Enter the `ip address` of your Raspberry Pi as shown below to start your web control from your mobile device. 
-~~~~
-http://<ip address of your raspberry Pi>:3000/
-~~~~
-e.g.
-~~~~
-http://192.168.1.125:3000/
-~~~~
+You will see the details of your Raspberry Pi local web server.
+```console
+$ 
+*** http server ***
+HttpServer started: http://192.168.1.125:3000
+```
+
+Open a web browser and enter your web server details.
+```console
+http://192.168.1.125:3000
+```
 
 ### License
 
