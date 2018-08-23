@@ -1,4 +1,4 @@
-## PiWebControl
+## RpiWebControl
 
 A simple HTTP remote control project for Raspberry Pi using array-gpio, express and angular.
 
