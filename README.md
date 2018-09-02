@@ -43,7 +43,7 @@ $ node app
 
 You will see the details of your Raspberry Pi local web server.
 ```console
-$ 
+$ node app
 *** http server ***
 HttpServer started: http://192.168.1.125:3000
 ```
