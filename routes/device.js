@@ -39,7 +39,7 @@ var data;
 
 setTimeout(function(){
   data = JSON.stringify(result);
-  res.json({item: data.toString()});
+  res.json({item: data});
 },50); 
 });
 
